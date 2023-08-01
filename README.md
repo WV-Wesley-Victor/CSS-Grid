@@ -1,0 +1,2 @@
+# CSS Grid
+ Este é um repositório no GitHub dedicado a fornecer um guia completo sobre o CSS Grid, uma das mais poderosas ferramentas de layout em CSS. Através deste projeto, você aprenderá a criar layouts avançados e flexíveis para suas páginas web, permitindo organizar o conteúdo em linhas e colunas com facilidade. Com exemplos práticos e explicações detalhadas, você se tornará um especialista em CSS Grid.
