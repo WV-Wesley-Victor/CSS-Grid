@@ -3,7 +3,7 @@
  
 ![Captura de Tela (51)](https://github.com/WV-Wesley-Victor/CSS-Grid/assets/137107062/953443f9-1fe6-4e99-a645-240e3aca4594)
 <p align="center">
-  <a href="https://wv-wesley-victor.github.io/Projeto-Aprenser/" target="_blank">Clique aqui para visitar o projeto</a>
+  <a href="https://wv-wesley-victor.github.io/CSS-Grid/" target="_blank">Clique aqui para visitar o projeto</a>
 </p>
 
 ## Descrição 
