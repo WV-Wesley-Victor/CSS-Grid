@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wesley Victor Pereira Silva" />
+    <meta name="description"
+        content="Exemplo de uso de CSS Grid para criar um layout responsivo com uma grade de itens e áreas de conteúdo definidas usando a propriedade grid-template." />
+    <meta name="keywords" content="CSS Grid, layout responsivo, design web, desenvolvimento web" />
+    <title>CSS Grid</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .gridContainer {
+            width: 100vw;
+            height: 100vh;
+            background: #ccc;
+        }
+
+        .gridItem {
+            background-color: orange;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* GRID */
+        .gridContainer {
+            display: grid;
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 75px 50px 1fr 50px; */
+            gap: 1em;
+            /* grid-template-areas:
+                "header header header"
+                "nav nav ."
+                "main main aside"
+                "footer footer aside"; */
+            grid-template:
+                "header header header" 75px
+                "nav nav ." 50px
+                "main main aside" 1fr
+                "footer footer aside" 50px
+                / 1fr 1fr 1fr;
+        }
+
+        .header {
+            /* grid-column: 1 / -1; */
+            /* grid-area: header; */
+            /* grid-column: header-start / header-end; */
+            grid-column: header;
+        }
+
+        .nav {
+            /* grid-column: 1 / -2; */
+            /* grid-area: nav; */
+            /* grid-column: nav-start / nav-end; */
+            grid-column: nav;
+        }
+
+        .aside {
+            /* grid-row: 2 / -1;
+            grid-column: 3 / -1;
+            z-index: 1; */
+            /* grid-area: aside; */
+            /* grid-column: aside-start / aside-end; */
+            grid-column: aside;
+            /* grid-row: aside-start / aside-end; */
+            grid-row: aside;
+        }
+
+        .main {
+            /* grid-column: 1 / 3; */
+            /* grid-area: main; */
+            /* grid-column: main-start / main-end; */
+            grid-column: main;
+        }
+
+        .footer {
+            /* grid-column: 1 / -1;
+            grid-row: 4 / 5;
+            background-color: rgb(0 0 0 / 0.5); */
+            /* grid-area: footer; */
+            /* grid-column: footer-start / footer-end; */
+            grid-column: footer;
+        }
+
+        /* nav */
+        nav {
+            background-color: #ccc;
+            padding: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+
+        a:hover {
+            background-color: #818181;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="grid.html">Grid0</a></li>
+            <li><a href="grid1.html">Grid1</a></li>
+            <li><a href="grid2.html">Grid2</a></li>
+            <li><a href="grid3.html">Grid3</a></li>
+            <li><a href="grid4.html">Grid4</a></li>
+        </ul>
+    </nav>
+    <div class="gridContainer">
+        <header class="header gridItem">header</header>
+        <nav class="nav gridItem">nav</nav>
+        <aside class="aside gridItem">aside</aside>
+        <main class="main gridItem">main</main>
+        <footer class="footer gridItem">footer</footer>
+    </div>
+</body>
+
+</html>

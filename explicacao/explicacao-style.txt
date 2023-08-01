@@ -1,0 +1,31 @@
+Vou explicar o código
+
+- Estilo do Corpo da Página:
+
+    O estilo para o corpo (<body>) inclui a definição de fonte, o uso do flexbox para centralizar o conteúdo vertical e horizontalmente na tela (justify-content: center; align-items: center;), a definição de altura mínima (min-height: 100vh) para garantir que a página ocupe pelo menos toda a altura da janela do navegador, a remoção das margens padrão (margin: 0;) e a definição de um plano de fundo com gradiente linear.
+
+- Estilo da Calculadora:
+
+    A calculadora é representada por uma div com o id="calculator".
+    O estilo para essa div utiliza CSS Grid para organizar os elementos da calculadora em uma grade com quatro colunas e cinco linhas (grid-template-columns: repeat(4, 1fr); grid-template-rows: auto repeat(5, 60px);).
+    Há um espaçamento entre os elementos da grade (gap: 0.5em;), e a largura da calculadora é fixada em 300 pixels (width: 300px;).
+    É aplicado um plano de fundo com gradiente linear diferente para a calculadora, e ela possui bordas arredondadas (border-radius: 5px;) e uma sombra para dar uma aparência de elevação (box-shadow: 0 0 10px rgb(0 0 0 / 0.8);).
+
+- Estilo para o Display e Botões:
+
+    O elemento de saída (<output>) com o id="display" e os botões (<button>) têm um plano de fundo com gradiente linear, e o texto é exibido em branco (color: white;).
+    O elemento de saída recebe uma sombra interna no lado direito e na parte inferior (box-shadow: inset 3px 3px 0 #161616;), que dá uma aparência de profundidade ao campo de exibição.
+    Os botões têm uma borda sólida de 2 pixels e as bordas esquerda e superior têm cores específicas (border-left-color: #8a8a8a; border-top-color: #8a8a8a;).
+    A classe .span-row-2 é aplicada a um dos botões, fazendo com que ele ocupe duas linhas na grade da calculadora.
+    A classe .span-column-2 é aplicada a outro botão, fazendo com que ele ocupe duas colunas na grade da calculadora.
+
+- Estilo da Navegação:
+
+    O elemento de navegação (<nav>) possui um plano de fundo com gradiente linear diferente e uma altura fixada em 50% da altura da janela (height: 50vh;).
+    Os itens da lista são exibidos em uma coluna (flex-direction: column;), e o estilo do item é alterado sutilmente quando o mouse passa por cima (li:hover).
+    
+- Classe .div:
+
+    A classe .div é aplicada a uma série de elementos <div> que têm uma borda sólida com cor específica (border: 1px solid rgb(43, 71, 114, 0.5);) e ocupam 100% da largura disponível (width: 100%;).
+
+O código fornecido é uma página web que contém uma calculadora simples feita em HTML e estilizada com CSS. A página possui uma estrutura básica com um cabeçalho de navegação e uma área central para a calculadora. A calculadora é estilizada usando CSS Grid para organizar os botões e a área de exibição dos resultados. Os estilos incluem gradiente linear para o plano de fundo, cores de texto brancas, sombras e bordas nos botões.

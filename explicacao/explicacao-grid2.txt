@@ -1,0 +1,36 @@
+vou explicar o código
+
+- Metadados do Documento:
+
+    As tags <head> contêm metadados do documento, como a codificação de caracteres (<meta charset="UTF-8" />) e a definição da escala inicial para dispositivos (<meta name="viewport" content="width=device-width, initial-scale=1.0" />).
+    Outras tags <meta> fornecem informações sobre o autor, descrição e palavras-chave relacionadas ao conteúdo da página.
+
+- Título da Página:
+
+    A tag <title> define o título da página, que será exibido na guia do navegador.
+
+- Estilos CSS Internos:
+
+    O código contém uma série de regras de estilo CSS que definem a aparência da página.
+    São definidas variáveis CSS usando a declaração --nome-da-variavel: valor;, como --primary-color: #fed001;.
+    A seção de estilo também define o tamanho da fonte, família de fontes e estilo padrão para o texto do documento (font: 400 62.5% "Inter", sans-serif;).
+
+- Estrutura do Documento:
+
+    O corpo (<body>) contém o conteúdo visível da página.
+    O cabeçalho (<header>) contém uma lista não ordenada (<ul>) com links de navegação (<a>) para diferentes seções da página.
+    O conteúdo principal é envolvido em uma <main> que possui parágrafos (<p>) de texto "main" e "teste".
+    O rodapé (<footer>) contém informações de autoria.
+
+- Estilos CSS para o Layout da Página:
+
+    A classe .wrapperContainer é usada para definir estilos de contêineres em várias seções da página, como cor de fundo e cor do texto.
+    A classe .wrapperContainer-fixed é usada para tornar o cabeçalho fixo no topo da página usando position: sticky;.
+    As classes .header, .main, .footer etc. definem estilos específicos para diferentes seções da página, como cores de fundo e espaçamentos.
+    As classes .gridContainer e .gridItem não estão sendo usadas neste exemplo, mas provavelmente fazem parte de outro trecho de código ou demonstração que usa CSS Grid para criar um layout de grade.
+
+- Estilos CSS para a Navegação:
+
+    A navegação (<nav>) tem um fundo cinza claro e os links (<a>) dentro dela têm uma aparência estilizada com cores de texto, bordas arredondadas e uma mudança de cor no hover.
+
+Em resumo, o código cria uma página HTML simples com estilos CSS internos para definir o layout, as cores de fundo, tamanhos de fonte e estilos de texto. Além disso, inclui uma barra de navegação básica com links para diferentes seções da página e um cabeçalho e rodapé fixos. Algumas classes e estilos adicionais também podem estar relacionados a uma demonstração ou exemplo específico, como o uso de CSS Grid, mas esses detalhes não estão presentes nesse código específico.

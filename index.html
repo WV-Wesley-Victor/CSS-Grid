@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wesley Victor Pereira Silva" />
+    <meta name="description" content="Esta é uma calculadora simples em HTML e CSS." />
+    <meta name="keywords" content="calculadora, operações matemáticas, adição, subtração, multiplicação, divisão" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <div class="div"></div>
+            <li><a href="grid.html">Grid0</a></li>
+            <div class="div"></div>
+            <li><a href="grid1.html">Grid1</a></li>
+            <div class="div"></div>
+            <li><a href="grid2.html">Grid2</a></li>
+            <div class="div"></div>
+            <li><a href="grid3.html">Grid3</a></li>
+            <div class="div"></div>
+            <li><a href="grid4.html">Grid4</a></li>
+            <div class="div"></div>
+        </ul>
+    </nav>
+    <div id="calculator">
+        <output id="display">0</output>
+        <button>AC</button>
+        <button>%</button>
+        <button>X</button>
+        <button>/</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>=</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="span-row-2">+</button>
+        <button class="span-column-2">0</button>
+        <button>,</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const display = document.getElementById('display');
+          let currentInput = '0';
+          let operator = null;
+          let previousInput = null;
+      
+          function updateDisplay() {
+            display.textContent = currentInput;
+          }
+      
+          function handleNumberClick(number) {
+            if (currentInput === '0') {
+              currentInput = number;
+            } else {
+              currentInput += number;
+            }
+            updateDisplay();
+          }
+      
+          function handleOperatorClick(newOperator) {
+            if (operator !== null) {
+              evaluate();
+            }
+            operator = newOperator;
+            previousInput = currentInput;
+            currentInput = '0';
+          }
+      
+          function evaluate() {
+            const num1 = parseFloat(previousInput);
+            const num2 = parseFloat(currentInput);
+            switch (operator) {
+              case '+':
+                currentInput = (num1 + num2).toString();
+                break;
+              case '-':
+                currentInput = (num1 - num2).toString();
+                break;
+              case 'X':
+                currentInput = (num1 * num2).toString();
+                break;
+              case '/':
+                currentInput = (num1 / num2).toString();
+                break;
+              case '%':
+                currentInput = (num1 % num2).toString();
+                break;
+            }
+            operator = null;
+            updateDisplay();
+          }
+      
+          function handleEqualsClick() {
+            if (operator !== null) {
+              evaluate();
+            }
+          }
+      
+          function handleClear() {
+            currentInput = '0';
+            operator = null;
+            previousInput = null;
+            updateDisplay();
+          }
+      
+          // Add event listeners to the number buttons
+          const numberButtons = document.querySelectorAll('#calculator button:not([class])');
+          numberButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+              handleNumberClick(button.textContent);
+            });
+          });
+      
+          // Add event listeners to the operator buttons
+          const operatorButtons = document.querySelectorAll('#calculator button:not([class="span-row-2"]):not([class="span-column-2"])');
+          operatorButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+              handleOperatorClick(button.textContent);
+            });
+          });
+      
+          // Add event listener to the equals button
+          const equalsButton = document.querySelector('#calculator button[class="span-row-2"]');
+          equalsButton.addEventListener('click', handleEqualsClick);
+      
+          // Add event listener to the AC button (Clear button)
+          const clearButton = document.querySelector('#calculator button:first-child');
+          clearButton.addEventListener('click', handleClear);
+      
+          // Add event listener to the comma button
+          const commaButton = document.querySelector('#calculator button:last-child');
+          commaButton.addEventListener('click', () => {
+            if (!currentInput.includes('.')) {
+              currentInput += '.';
+              updateDisplay();
+            }
+          });
+        });
+      </script>      
+</body>
+
+</html>

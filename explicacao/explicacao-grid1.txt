@@ -1,0 +1,34 @@
+Este código HTML e CSS mostra um exemplo de uso do CSS Grid para criar um layout responsivo com uma grade de itens e áreas de conteúdo definidas usando a propriedade grid-template.
+
+Vou explicar as partes importantes do código:
+
+- HTML Estrutura:
+
+    A estrutura básica do documento HTML contém uma barra de navegação (<nav>) com links em uma lista não ordenada (<ul>) e seis itens de conteúdo dentro de um contêiner de grade com a classe .gridContainer.
+    Cada item de conteúdo possui uma classe comum .gridItem, que é estilizada no CSS.
+
+- CSS Interno:
+
+    O CSS define o estilo para o layout de grade.
+    O seletor body define margin: 0; para remover as margens padrão do corpo da página.
+    O seletor .gridContainer define o contêiner da grade com width: 100vw; e height: 100vh;, o que significa que ele ocupará toda a largura e altura da janela de visualização.
+    A propriedade grid-template é usada para definir o layout da grade, especificando as áreas e as dimensões das linhas e colunas da grade.
+
+- Layout de Grade:
+
+    A classe .gridContainer define o layout da grade com quatro linhas e três colunas.
+    A propriedade grid-template é usada para definir o layout da grade em uma sintaxe compacta.
+    Cada área da grade é definida entre aspas com sua altura ou largura correspondente.
+    As áreas da grade são definidas na seguinte ordem: "header", "nav", "main", "footer", e a área "aside" é especificada duas vezes, indicando que ela se estende por várias linhas.
+
+- Estilos dos Itens de Conteúdo:
+
+    Os itens de conteúdo são estilizados pela classe .gridItem.
+    Todos os itens de conteúdo têm a cor de fundo laranja e um preenchimento de 15px.
+    As classes .header, .nav, .aside, .main e .footer são usadas para posicionar os itens de conteúdo nos locais específicos definidos na grade.
+
+- Barra de Navegação:
+
+    A barra de navegação é estilizada para criar botões de navegação com transições de cor de fundo suaves ao passar o mouse sobre os links.
+    
+O código mostra um exemplo de layout de grade responsivo, onde o conteúdo é organizado em áreas específicas dentro de um contêiner de grade usando o CSS Grid. As áreas podem se ajustar automaticamente ao tamanho da tela ou do contêiner pai, tornando o layout adequado para diferentes dispositivos e tamanhos de tela.
