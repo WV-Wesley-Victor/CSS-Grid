@@ -16,7 +16,8 @@ Explore os diferentes recursos do CSS Grid, incluindo o uso de grade implícita,
 * Exemplos Práticos: O repositório inclui diversos exemplos práticos que demonstram a aplicação do CSS Grid em situações reais.
 
 ## Fontes de Pesquisa
-* MDN Web Docs - CSS Grid Layout: O MDN Web Docs é uma fonte confiável de documentação de desenvolvimento web, e a página dedicada ao CSS Grid Layout oferece informações detalhadas sobre como usar o CSS Grid para criar layouts poderosos.
+* [MDN Web Docs - CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+: O MDN Web Docs é uma fonte confiável de documentação de desenvolvimento web, e a página dedicada ao CSS Grid Layout oferece informações detalhadas sobre como usar o CSS Grid para criar layouts poderosos.
 * CSS-Tricks - A Complete Guide to Grid: O CSS-Tricks é uma referência valiosa para aprender sobre CSS Grid. Este guia completo fornece exemplos práticos e explicações detalhadas sobre todos os aspectos do CSS Grid.
 * Grid by Example: Este site, mantido por Rachel Andrew, oferece exemplos e tutoriais sobre o CSS Grid. É uma ótima fonte para ver o CSS Grid em ação e aprender como aplicá-lo em seus próprios projetos.
 * Layout Land - CSS Grid: Esta playlist no canal Layout Land, de Jen Simmons, contém uma série de vídeos sobre o CSS Grid, apresentando exemplos e dicas úteis para aprimorar suas habilidades de layout.
