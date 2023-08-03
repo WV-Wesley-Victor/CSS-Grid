@@ -16,12 +16,25 @@ Explore os diferentes recursos do CSS Grid, incluindo o uso de grade implícita,
 * Exemplos Práticos: O repositório inclui diversos exemplos práticos que demonstram a aplicação do CSS Grid em situações reais.
 
 ## Fontes de Pesquisa
-* [MDN Web Docs - CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout): O MDN Web Docs é uma fonte confiável de documentação de desenvolvimento web, e a página dedicada ao CSS Grid Layout oferece informações detalhadas sobre como usar o CSS Grid para criar layouts poderosos.
-* [CSS-Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/): O CSS-Tricks é uma referência valiosa para aprender sobre CSS Grid. Este guia completo fornece exemplos práticos e explicações detalhadas sobre todos os aspectos do CSS Grid.
-* [Grid by Example](https://gridbyexample.com/): Este site, mantido por Rachel Andrew, oferece exemplos e tutoriais sobre o CSS Grid. É uma ótima fonte para ver o CSS Grid em ação e aprender como aplicá-lo em seus próprios projetos.
-* [Layout Land - CSS Grid](https://www.youtube.com/playlist?list=PLbSquHt1VCf1x_-1ytlVMT0AMwADlWtc1): Esta playlist no canal Layout Land, de Jen Simmons, contém uma série de vídeos sobre o CSS Grid, apresentando exemplos e dicas úteis para aprimorar suas habilidades de layout.
-* [CSS Grid Garden](https://cssgridgarden.com/): Este jogo interativo é uma forma divertida de aprender CSS Grid enquanto resolve desafios em um ambiente interativo.
-* [Wes Bos - CSS Grid Course](https://wesbos.com/courses): Wes Bos oferece um curso pago sobre CSS Grid, mas também fornece alguns vídeos gratuitos que podem ser uma boa introdução ao tema.
+aprender CSS Grid é uma habilidade valiosa para o desenvolvimento de layouts avançados e responsivos. Aqui estão algumas fontes de pesquisa específicas para aprender CSS Grid:
+
+* MDN Web Docs - CSS Grid Layout: A documentação da MDN é uma excelente fonte para aprender sobre CSS Grid, desde conceitos básicos até exemplos práticos.
+Site: https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Grid_Layout
+* CSS-Tricks Guide to Grid: CSS-Tricks oferece um guia completo para CSS Grid, com tutoriais, exemplos e dicas práticas.
+Artigo: https://css-tricks.com/snippets/css/complete-guide-grid/
+* Grid by Example: Este site é dedicado exclusivamente ao CSS Grid, com uma coleção de exemplos práticos e tutoriais.
+Site: https://gridbyexample.com/
+* CSS Grid Layout Crash Course (YouTube): Kevin Powell oferece um tutorial em vídeo completo sobre CSS Grid, que cobre desde o básico até tópicos avançados.
+Vídeo: https://www.youtube.com/watch?v=jV8B24rSN5o
+* Layout Land (YouTube): Jen Simmons é uma especialista em design e layout da web. Seu canal no YouTube, Layout Land, possui vários vídeos sobre CSS Grid e outras técnicas de layout.
+Canal: https://www.youtube.com/c/LayoutLand
+* CSS Grid Garden: Como mencionado anteriormente, o CSS Grid Garden é um jogo interativo que ajuda você a aprender CSS Grid de maneira prática e divertida.
+Site: https://cssgridgarden.com/
+* CodePen: Explore exemplos de código relacionados a CSS Grid no CodePen. Pesquisar por "CSS Grid" ou "Grid Layout" fornecerá uma variedade de projetos e demonstrações.
+Site: https://codepen.io/
+* Livros sobre CSS Grid: Alguns livros específicos sobre CSS Grid podem ser úteis para um aprendizado mais aprofundado, como "CSS Grid Layout in CSS Grid Layout" de Rachel Andrew.
+
+Lembre-se de praticar bastante ao aprender CSS Grid. Crie projetos pessoais e experimente diferentes layouts para solidificar seu conhecimento. À medida que você se familiariza com CSS Grid, também pode explorar como combiná-lo com outras técnicas, como Flexbox, para criar layouts ainda mais avançados e responsivos.
 
 ## Instruções de Instalação (caso aplicável)
 Este projeto é uma coleção de tutoriais e exemplos disponibilizados online, não requerendo instalação local. Basta acessar o URL fornecido e explorar os recursos disponíveis.
